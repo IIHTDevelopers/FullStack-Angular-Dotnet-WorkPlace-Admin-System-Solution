@@ -1,0 +1,35 @@
+<!-- src/app/modules/department/components/department-detail/department-detail.component.html -->
+
+<div class="department-detail-container">
+    <h2>{{ isEditMode ? 'Edit' : 'View' }} Department</h2>
+
+    <!-- Display error message if department data fails to load -->
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+
+    <!-- Department details form (visible in both view and edit modes) -->
+    <form *ngIf="department">
+        <div class="form-group">
+            <label for="name">Department Name</label>
+            <input type="text" id="name" [(ngModel)]="department.name" name="name" class="form-control"
+                [readonly]="!isEditMode" required />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Department Description</label>
+            <textarea id="description" [(ngModel)]="department.description" name="description" class="form-control"
+                [readonly]="!isEditMode" rows="4" required></textarea>
+        </div>
+
+        <!-- Buttons for saving or canceling changes -->
+        <button *ngIf="isEditMode" (click)="save()" class="btn btn-primary">Save Changes</button>
+        <button *ngIf="isEditMode" (click)="cancel()" class="btn btn-secondary">Cancel</button>
+    </form>
+
+    <!-- Buttons for navigating between view/edit mode -->
+    <div *ngIf="!isEditMode">
+        <a [routerLink]="['/department/edit', department.id]" class="btn btn-warning">Edit Department</a>
+        <a [routerLink]="['/departments']" class="btn btn-secondary">Back to Departments</a>
+    </div>
+</div>

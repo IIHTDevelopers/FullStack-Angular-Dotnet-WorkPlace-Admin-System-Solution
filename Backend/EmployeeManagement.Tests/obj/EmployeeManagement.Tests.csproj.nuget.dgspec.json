@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement.Tests\\EmployeeManagement.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement.Tests\\EmployeeManagement.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement.Tests\\EmployeeManagement.Tests.csproj",
+        "projectName": "EmployeeManagement.Tests",
+        "projectPath": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement.Tests\\EmployeeManagement.Tests.csproj",
+        "packagesPath": "C:\\Users\\umaku\\.nuget\\packages\\",
+        "outputPath": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\umaku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement_API\\EmployeeManagement_API.csproj": {
+                "projectPath": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement_API\\EmployeeManagement_API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement_API\\EmployeeManagement_API.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement_API\\EmployeeManagement_API.csproj",
+        "projectName": "EmployeeManagement_API",
+        "projectPath": "D:\\IIHT_DATA\\Project_2025\\EmployeeManagement_API\\EmployeeManagement_API_With_TestCase\\EmployeeManagement_API\\EmployeeManagement_API.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ import { tap } from 'rxjs/operators';
 })
 export class AuthService {
   // private apiUrl = 'http://localhost:3000/api/auth'; // Replace with your actual backend URL
-  private apiUrl = 'http://localhost:3000/auth'; // Replace with your actual backend URL
+  private apiUrl = 'https://localhost:44318/Api/auth'; // Replace with your actual backend URL
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
 

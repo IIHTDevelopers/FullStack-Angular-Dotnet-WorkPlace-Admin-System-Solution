@@ -1,0 +1,21 @@
+1 - After Launch The VM putting verification code –
+
+2 - Open the project and.
+
+3 - Build the project and
+
+4 - install the below package - 
+
+Note – Run below command on Package Manager Console –
+
+Uninstall-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+
+And after that run -
+
+Install-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+
+ 
+
+·       After installation finish.
+
+Build the project and Run again and you will get help screen, you can click to see list of API available on this project by clicking on API Menu.

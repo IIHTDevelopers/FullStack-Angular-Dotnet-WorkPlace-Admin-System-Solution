@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class DepartmentService {
   // private apiUrl = 'http://localhost:3000/api/departments';
-  private apiUrl = 'http://localhost:3000/departments';
+  private apiUrl = 'https://localhost:44318/api/departments';
 
   constructor(private httpService: HttpService) { }
 
   // Get all departments
   getDepartments(): Observable<any> {
-    return this.httpService.get<any>(this.apiUrl);
+    return this.httpService.get<any>(`${this.apiUrl}/getalldepartments`);
   }
 
   // Get department details by ID
@@ -23,16 +23,16 @@ export class DepartmentService {
 
   // Add a new department
   addDepartment(department: any): Observable<any> {
-    return this.httpService.post<any>(this.apiUrl, department);
+    return this.httpService.post<any>(`${this.apiUrl}/createdepartments`, department);
   }
 
   // Edit an existing department
   updateDepartment(id: number, department: any): Observable<any> {
-    return this.httpService.put<any>(`${this.apiUrl}/${id}`, department);
+    return this.httpService.put<any>(`${this.apiUrl}/updatedepartment/${id}`, department);
   }
 
   // Delete a department by ID
   deleteDepartment(id: number): Observable<any> {
-    return this.httpService.delete<any>(`${this.apiUrl}/${id}`);
+    return this.httpService.delete<any>(`${this.apiUrl}/deletedepartment/${id}`);
   }
 }

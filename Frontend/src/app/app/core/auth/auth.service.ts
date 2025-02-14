@@ -10,7 +10,7 @@ import { tap } from 'rxjs/operators';
 })
 export class AuthService {
   // private apiUrl = 'http://localhost:3000/api/auth'; // Replace with your actual backend URL
-  private apiUrl = 'https://localhost:44318/Api/auth'; // Replace with your actual backend URL
+  private apiUrl = 'https://localhost:44318/api/auth'; // Replace with your actual backend URL
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
 
@@ -21,8 +21,8 @@ export class AuthService {
 
   // Login method: To authenticate the user and store the token
   login(username: string, password: string): Observable<any> {
-    // return this.http.post<any>(`${this.apiUrl}/login`, { username, password }).pipe(
-    return this.http.get<any>(`${this.apiUrl}`).pipe(
+    return this.http.post<any>(`${this.apiUrl}/login`, { Email: username, Password: password }).pipe(
+    // return this.http.get<any>(`${this.apiUrl}`).pipe(
       tap(response => {
         // Store the token in local storage
         // console.log(response);

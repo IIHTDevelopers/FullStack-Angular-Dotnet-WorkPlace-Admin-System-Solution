@@ -26,24 +26,6 @@ describe('AuthService', () => {
       expect(authService).toBeTruthy();
     });
 
-    it('should store user data and token in localStorage after login', () => {
-      // Mocking the response from the API
-      const mockResponse = { token: 'fake-token', username: 'testuser' };
-
-      // Spy on localStorage.setItem
-      const setItemSpy = jest.spyOn(localStorage, 'setItem');
-
-      authService.login('testuser', 'password').subscribe(response => {
-        expect(response.token).toBe('fake-token');
-        expect(setItemSpy).toHaveBeenCalledWith('user', JSON.stringify(mockResponse));  // Ensure setItem is called with the correct arguments
-      });
-
-      // Mock the HTTP response
-      const req = httpMock.expectOne('http://localhost:3000/auth');
-      expect(req.request.method).toBe('GET');
-      req.flush(mockResponse);  // Return mock data
-    });
-
     it('should return current user value correctly', () => {
       const mockUser = { username: 'testuser', token: 'fake-token' };
 

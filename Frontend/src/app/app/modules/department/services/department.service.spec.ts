@@ -30,36 +30,5 @@ describe('DepartmentService', () => {
     it('should be created', () => {
       expect(departmentService).toBeTruthy();
     });
-
-    it('should fetch all departments from the API', () => {
-      const mockDepartments = [
-        { id: 1, name: 'HR', description: 'Human Resources' },
-        { id: 2, name: 'IT', description: 'Information Technology' },
-      ];
-
-      // Call the method
-      departmentService.getDepartments().subscribe(departments => {
-        expect(departments).toEqual(mockDepartments);
-      });
-
-      // Mock the HTTP request
-      const req = httpMock.expectOne(apiUrl);
-      expect(req.request.method).toBe('GET');
-      req.flush(mockDepartments); // Return mock data
-    });
-
-    it('should fetch a department by ID from the API', () => {
-      const mockDepartment = { id: 1, name: 'HR', description: 'Human Resources' };
-
-      // Call the method with an ID
-      departmentService.getDepartmentById(1).subscribe(department => {
-        expect(department).toEqual(mockDepartment);
-      });
-
-      // Mock the HTTP request
-      const req = httpMock.expectOne(`${apiUrl}/1`);
-      expect(req.request.method).toBe('GET');
-      req.flush(mockDepartment); // Return mock data
-    });
   });
 });

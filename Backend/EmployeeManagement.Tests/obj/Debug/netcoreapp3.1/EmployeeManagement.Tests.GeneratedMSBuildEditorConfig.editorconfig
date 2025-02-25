@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = EmployeeManagement.Tests
+build_property.ProjectDir = D:\Final_Project\EmployeeManagement_Auth_API_With_TestCase-main\EmployeeManagement.Tests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
